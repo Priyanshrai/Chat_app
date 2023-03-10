@@ -13,7 +13,7 @@ app.get("/",(req, res, next)=>{
         }
         res.send(
             `${data} <form action="/" onsubmit="document.getElementById('username').value=localStorage.getItem('username')"
-            method="post">
+            method="post"> 
             <input id='message' type="text" name="message" placeholder="message">
             <input type="hidden" name="username" id="username">
             <button type="submit">send</button>
